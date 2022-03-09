@@ -59,6 +59,8 @@ body.dark
     background-size: 80%;
 
     -webkit-transform: translateZ(0);
+    overflow: hidden;
+   -webkit-overflow-scrolling: touch;
 }
 
 #ChangeColorMode.dark
