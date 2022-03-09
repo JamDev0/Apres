@@ -5,8 +5,10 @@ ChangeColorMode.addEventListener('click', TurnDark);
 function TurnDark()
 {
     document.querySelector('h1').classList.toggle('dark');
+    document.querySelector('h2').classList.toggle('dark');
     document.querySelector('body').classList.toggle('dark');
     document.querySelector('#Piece1Description').classList.toggle('dark');
+    document.querySelector('#Piece2Description').classList.toggle('dark');
     ChangeColorMode.classList.toggle('dark');
 }
 
@@ -41,3 +43,5 @@ let ViewerOptions = {
 };
 
 new Viewer(document.querySelector('#Piece1'), ViewerOptions);
+
+new Viewer(document.querySelector('#Pice2'), ViewerOptions)
