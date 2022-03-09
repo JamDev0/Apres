@@ -6,7 +6,33 @@ function TurnDark()
 }
 
 let ViewerOptions = {
+    title: false,
 
+    navbar: false,
+
+    toolbar: {
+        prev: {
+            show: 1,
+            size: 'large',
+        },
+        play: {
+            show: 1,
+            size: 'large',
+        },
+        next: {
+            show: 1,
+            size: 'large',
+        },
+    },
+
+    fullscreen: true,
+
+    loading: true,
+
+
+    movable: false,
+
+    slideOnTouch: true,
 };
 
 new Viewer(document.querySelector('#Piece1'), ViewerOptions);
