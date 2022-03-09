@@ -40,6 +40,33 @@ body.dark
 }
 
 
+#ChangeColorMode
+{
+    position: fixed;
+
+    bottom: 100px;
+    right: 100px;
+
+    width: 12%;
+    aspect-ratio: 1/1;
+
+    border-radius: 50%;
+
+    background-color: #010825;
+    background-image: url(Assets/moon.svg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+#ChangeColorMode.dark
+{
+    background-color: #61a1b1;
+    background-image: url(Assets/sun.svg);
+}
+
+
 main
 {
     text-align: center;

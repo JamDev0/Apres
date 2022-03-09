@@ -1,8 +1,13 @@
+let ChangeColorMode = document.querySelector('#ChangeColorMode');
+
+ChangeColorMode.addEventListener('click', TurnDark);
+
 function TurnDark()
 {
     document.querySelector('h1').classList.toggle('dark');
     document.querySelector('body').classList.toggle('dark');
     document.querySelector('#Piece1Description').classList.toggle('dark');
+    ChangeColorMode.classList.toggle('dark');
 }
 
 let ViewerOptions = {
