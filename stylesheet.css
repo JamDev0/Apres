@@ -1,0 +1,109 @@
+:root
+{
+    --Light-Pime-Bg-Color: #f4e4de;
+
+    --Light-Secunddari-Bg-Color: #eedad3;
+
+    --Light-h1-Color: rgb(21, 21, 22);
+
+    --Light-text-Color: rgb(233, 233, 233);
+
+
+    --Dark-Pime-Bg-Color: #27274b;
+
+    --Dark-Secunddari-Bg-Color: #161616;
+
+    --Dark-h1-Color: rgb(216, 216, 216);
+
+    --Dark-text-Color: rgb(204, 204, 204);
+}
+
+*
+{
+    margin: 0;
+}
+
+
+body
+{
+    background-color: var(--Light-Pime-Bg-Color);
+    opacity: 1;
+    background: repeating-linear-gradient( 45deg, var(--Light-Secunddari-Bg-Color), var(--Light-Secunddari-Bg-Color) 20px, var(--Light-Pime-Bg-Color) 20px, var(--Light-Pime-Bg-Color) 100px );
+}
+
+body.dark
+{
+    background-color: var(--Dark-Pime-Bg-Color);
+    opacity: 1;
+    background-image: radial-gradient(circle at center center, var(--Dark-Secunddari-Bg-Color), var(--Dark-Pime-Bg-Color)), repeating-radial-gradient(circle at center center, var(--Dark-Secunddari-Bg-Color), var(--Dark-Secunddari-Bg-Color), 40px, transparent 80px, transparent 40px);
+    background-blend-mode: multiply;
+}
+
+
+main
+{
+    text-align: center;
+}
+
+
+h1
+{
+    margin-top: 14rem;
+    margin-bottom: 10rem;
+
+    font-family: 'Great Vibes', cursive;
+    font-size: 8rem;
+
+    color: var(--Light-h1-Color);
+}
+
+h1.dark
+{
+    color: var(--Dark-h1-Color);
+}
+
+
+#Piece1
+{
+    width: 90%;
+
+    margin-bottom: 7rem;
+}
+
+
+#Piece1Description
+{
+    color: var(--Light-text-Color);
+
+    background-color: rgba(0, 0, 0, 0.466);
+    
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+#Piece1Description.dark
+{
+    color: var(--Dark-text-Color);
+
+    background-color: transparent;
+}
+
+
+#Piece1Description > p
+{
+    margin-bottom: 6.5rem;
+
+    padding: 1.5rem;
+
+    text-align: justify;
+
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 500;
+}
+
+
+#Piece1Description > p::first-letter
+{
+    margin-left: 9%;
+}
+
